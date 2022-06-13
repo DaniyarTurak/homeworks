@@ -1,2 +1,5 @@
 const result = promiseFunction()
-console.log(`Промис ${typeof result === 'string' ? '' : 'НЕ'} работает ${typeof result === 'string' ? result : ''}`)
+result
+    .then((res) => console.log(`Промис ${typeof res === 'string' ? '' : 'НЕ'} работает ${typeof res === 'string' ? res : ''}`))
+    .catch((e) => console.log(e))
+
